@@ -9,6 +9,7 @@ const _ = require('lodash');
 
 module.exports = async (ctx, next) => {
   let role;
+  await strapi.plugins['magic'].services['magic'].loginWithMagic(ctx)
   if (ctx.state.user) {
     // request is already authenticated in a different way
     return next();
