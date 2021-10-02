@@ -1,1 +1,1 @@
-npm start develop
+npm run strapi develop
